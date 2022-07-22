@@ -1,0 +1,48 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: ClusterServiceVersion
+metadata:
+  annotations:
+    alm-examples: '[]'
+    capabilities: Basic Install
+  name: freshrss-operator.v0.0.0
+  namespace: placeholder
+spec:
+  apiservicedefinitions: {}
+  customresourcedefinitions:
+    owned:
+    - description: FreshRSS is the Schema for the freshrsses API
+      displayName: Fresh RSS
+      kind: FreshRSS
+      name: freshrsses.freshrss.demo.openshift.com
+      version: v1alpha1
+  description: FreshRSS is an open-source RSS reader web application
+  displayName: FreshRSS
+  icon:
+  - base64data: ""
+    mediatype: ""
+  install:
+    spec:
+      deployments: null
+    strategy: ""
+  installModes:
+  - supported: false
+    type: OwnNamespace
+  - supported: false
+    type: SingleNamespace
+  - supported: false
+    type: MultiNamespace
+  - supported: true
+    type: AllNamespaces
+  keywords:
+  - RSS
+  links:
+  - name: Freshrss Operator
+    url: https://freshrss-operator.domain
+  maintainers:
+  - email: mhrivnak@redhat.com
+    name: Michael Hrivnak
+  maturity: alpha
+  provider:
+    name: FreshRSS Community
+    url: https://www.freshrss.org/
+  version: 0.0.0

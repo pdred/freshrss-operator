@@ -1,0 +1,7 @@
+apiVersion: freshrss.demo.openshift.com/v1alpha1
+kind: FreshRSS
+metadata:
+  name: freshrss-sample
+spec:
+  title: "Awesome RSS"
+  defaultUser: "bob"
