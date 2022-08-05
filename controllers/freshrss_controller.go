@@ -31,7 +31,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 	ctrllog "sigs.k8s.io/controller-runtime/pkg/log"
 
-	freshrssv1alpha1 "github.com/mhrivnak/freshrss-operator/api/v1alpha1"
+	freshrssv1alpha1 "github.com/saas-patterns/freshrss-operator/api/v1alpha1"
 )
 
 // FreshRSSReconciler reconciles a FreshRSS object
@@ -173,7 +173,7 @@ func (r *FreshRSSReconciler) newService(ctx context.Context, instance *freshrssv
 func (r *FreshRSSReconciler) newDeployment(ctx context.Context, instance *freshrssv1alpha1.FreshRSS) (client.Object, controllerutil.MutateFn, error) {
 	container := corev1.Container{
 		Name:  "freshrss",
-		Image: "quay.io/mhrivnak/freshrss:latest",
+		Image: "quay.io/saas-patterns/freshrss:latest",
 		Ports: []corev1.ContainerPort{
 			{
 				ContainerPort: int32(8080),
