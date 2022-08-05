@@ -1,4 +1,4 @@
-module github.com/mhrivnak/freshrss-operator
+module github.com/saas-patterns/freshrss-operator
 
 go 1.18
 

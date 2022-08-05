@@ -32,8 +32,8 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/healthz"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
-	freshrssv1alpha1 "github.com/mhrivnak/freshrss-operator/api/v1alpha1"
-	"github.com/mhrivnak/freshrss-operator/controllers"
+	freshrssv1alpha1 "github.com/saas-patterns/freshrss-operator/api/v1alpha1"
+	"github.com/saas-patterns/freshrss-operator/controllers"
 	//+kubebuilder:scaffold:imports
 )
 

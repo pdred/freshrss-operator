@@ -158,7 +158,7 @@ spec:
                 - --leader-elect
                 command:
                 - /manager
-                image: quay.io/mhrivnak/freshrss-operator:0.0.1
+                image: quay.io/saas-patterns/freshrss-operator:0.0.1
                 livenessProbe:
                   httpGet:
                     path: /healthz
