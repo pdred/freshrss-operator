@@ -173,7 +173,7 @@ func (r *FreshRSSReconciler) newService(ctx context.Context, instance *freshrssv
 func (r *FreshRSSReconciler) newDeployment(ctx context.Context, instance *freshrssv1alpha1.FreshRSS) (client.Object, controllerutil.MutateFn, error) {
 	container := corev1.Container{
 		Name:  "freshrss",
-		Image: "quay.io/saas-patterns/freshrss:latest",
+		Image: "quay.io/saas-patterns/freshrss-image:latest",
 		Ports: []corev1.ContainerPort{
 			{
 				ContainerPort: int32(8080),
